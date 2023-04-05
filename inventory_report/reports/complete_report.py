@@ -34,7 +34,6 @@ class CompleteReport(SimpleReport):
 
         stock = str()
         for item in company_with_more_products:
-            print(f"- {item[0]}: {item[1]}\n")
             stock += f"- {item[0]}: {item[1]}\n"
         return (
             f"Data de fabricação mais antiga: {min(manufacturing_dates)}\n"
